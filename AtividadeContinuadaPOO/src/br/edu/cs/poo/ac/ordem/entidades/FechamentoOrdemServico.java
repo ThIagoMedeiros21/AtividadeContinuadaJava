@@ -1,0 +1,14 @@
+package br.edu.cs.poo.ac.ordem.entidades;
+import lombok.AllArgsConstructor;
+import lombok.Setter;
+import lombok.Getter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class FechamentoOrdemServico {
+    private String numeroOrdemServico;
+    private LocalDate dataFechamento;
+    private boolean pago;
+    private String relatorioFinal;
+}

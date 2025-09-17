@@ -7,7 +7,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Equipamento {
     private String descricao;
-    private TipoEquipamento tipo;
+    private Dificuldade tipo;
     private boolean ehNovo;
     private double valorEstimado;
 }

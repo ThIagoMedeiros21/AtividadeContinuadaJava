@@ -4,8 +4,8 @@ public enum TipoOrdem {
     MANUTENCAO(1,"Manutenção"),
     CONFIGURACAO(2, "Configuração"),
     UPGRADE(3, "Upgrade");
-    int codigo;
-    String nome;
+    private int codigo;
+    private String nome;
     private TipoOrdem(int codigo, String nome){
         this.codigo = codigo;
         this.nome = nome;

@@ -23,12 +23,12 @@ public class OrdemServico {
     }
 
     public String getNumero() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMyyddHHmm");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMyyyyddHHmm");
         String dataFormatada = dataHoraAbertura.format(formatter);
         String documento = cliente.getCpfCnpj();
-        if (documento.length() == 14) { // CNPJ
+        if (documento.length() == 14) {
             return dataFormatada + documento;
-        } else { // CPF
+        } else {
             return dataFormatada + "000" + documento;
         }
     }

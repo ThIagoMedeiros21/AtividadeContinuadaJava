@@ -1,14 +1,17 @@
 package br.edu.cs.poo.ac.ordem.entidades;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
+import java.io.Serializable;
+
 @Getter
 @Setter
 @AllArgsConstructor
-public class OrdemServico {
+public class OrdemServico implements Serializable {
     private Cliente cliente;
     private PrecoBase precoBase;
     private Notebook notebook;

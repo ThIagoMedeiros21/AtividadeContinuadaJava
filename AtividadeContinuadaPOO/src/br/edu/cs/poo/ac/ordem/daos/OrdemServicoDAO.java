@@ -1,5 +1,6 @@
 package br.edu.cs.poo.ac.ordem.daos;
-//O identificador único, por objeto, de OrdemServico é o número.   
+//O identificador ï¿½nico, por objeto, de OrdemServico ï¿½ o nï¿½mero.   
 public class OrdemServicoDAO {
+
 
 }

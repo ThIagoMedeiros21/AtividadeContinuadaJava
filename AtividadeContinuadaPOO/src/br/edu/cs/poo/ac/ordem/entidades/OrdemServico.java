@@ -19,20 +19,26 @@ public class OrdemServico implements Serializable {
     private LocalDateTime dataHoraAbertura;
     private int prazoEmDias;
     private double valor;
-
     public LocalDate getDataEstimadaEntrega() {
         LocalDate dataAbertura = dataHoraAbertura.toLocalDate();
         return dataAbertura.plusDays(prazoEmDias);
     }
 
     public String getNumero() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMyyyyddHHmm");
+        String id = null;
+        if (notebook != null) {
+            id = notebook.getIdTipo();
+        }
+        else {
+            id = desktop.getIdTipo();
+        }
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmm");
         String dataFormatada = dataHoraAbertura.format(formatter);
         String documento = cliente.getCpfCnpj();
         if (documento.length() == 14) {
-            return dataFormatada + documento;
+            return id + dataFormatada + documento;
         } else {
-            return dataFormatada + "000" + documento;
+            return id + dataFormatada + "000" + documento;
         }
     }
 }

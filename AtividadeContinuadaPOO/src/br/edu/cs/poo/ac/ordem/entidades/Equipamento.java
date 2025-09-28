@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 
 public class Equipamento implements Serializable {
-    private String Serial;
+    private String serial;
     private String descricao;
     private boolean ehNovo;
     private double valorEstimado;

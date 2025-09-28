@@ -1,8 +1,5 @@
 package br.edu.cs.poo.ac.ordem.entidades;
-
-
 import java.io.Serializable;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

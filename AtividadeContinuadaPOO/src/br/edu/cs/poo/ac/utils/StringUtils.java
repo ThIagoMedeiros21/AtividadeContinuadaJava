@@ -1,4 +1,4 @@
-package br.edu.cs.poo.ac.ordem.utils;
+package br.edu.cs.poo.ac.utils;
 
 public class StringUtils {
     public static boolean estaVazia(String str) {

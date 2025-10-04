@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import br.edu.cs.poo.ac.ordem.daos.ClienteDAO;
 import br.edu.cs.poo.ac.ordem.entidades.Cliente;
 import br.edu.cs.poo.ac.ordem.entidades.Contato;
-import br.edu.cs.poo.ac.ordem.utils.*;
 
 public class ClienteMediator {
     private static final ClienteMediator INSTANCIA = new ClienteMediator();

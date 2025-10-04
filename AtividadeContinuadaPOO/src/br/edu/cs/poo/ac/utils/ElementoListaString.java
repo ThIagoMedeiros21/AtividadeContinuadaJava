@@ -1,4 +1,4 @@
-package br.edu.cs.poo.ac.ordem.utils;
+package br.edu.cs.poo.ac.utils;
 
 class ElementoListaString {
     private String conteudo;

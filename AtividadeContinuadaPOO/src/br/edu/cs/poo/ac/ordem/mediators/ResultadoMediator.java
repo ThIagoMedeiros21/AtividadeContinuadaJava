@@ -1,6 +1,6 @@
 package br.edu.cs.poo.ac.ordem.mediators;
 
-import br.edu.cs.poo.ac.ordem.utils.ListaString;
+import br.edu.cs.poo.ac.utils.ListaString;
 
 public class ResultadoMediator {
     private boolean validado;

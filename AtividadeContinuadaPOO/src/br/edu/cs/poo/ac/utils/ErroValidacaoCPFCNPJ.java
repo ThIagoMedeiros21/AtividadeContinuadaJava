@@ -1,4 +1,4 @@
-package br.edu.cs.poo.ac.ordem.utils;
+package br.edu.cs.poo.ac.utils;
 
 public enum ErroValidacaoCPFCNPJ {
     CPF_CNPJ_NULO_OU_BRANCO("CPF ou CNPJ está nulo ou em branco"),
